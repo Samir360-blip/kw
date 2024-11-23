@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Добавить человека</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="heading">
+            <h2>ПРОПИСАВ ЧЕЛОВЕКА В ФОРМУ - ДОБАВЬТЕ ЕГО В НЕОБХОДИМУЮ КОЛОНКУ</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="form" id="userForm">
+            <div class="form_2">
+                <label for="nameInput" class="sp">Имя</label>
+                <input type="text" class="inp" id="nameInput" placeholder="Имя" required>
+            </div>
+    
+            <div class="form_3">
+                <label for="ageInput" class="sp">Возраст</label>
+                <input type="number" class="inp" id="ageInput" placeholder="Возраст" required>
+                <button class="btn" type="submit" id="Btn">Добавить</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="columns-container">
+        <div class="column" id="column1">
+            <h2>Люди до 25</h2>
+        </div>
+        <div class="column" id="column2">
+            <h2>Люди до 60</h2>
+        </div>
+        <div class="column" id="column3">
+            <h2>Люди старше 60</h2>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2>Редактировать данные</h2>
+            <input type="text" id="modalName" placeholder="Имя" />
+            <input type="number" id="modalAge" placeholder="Возраст" />
+            <button id="saveBtn">Сохранить</button>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
